@@ -317,39 +317,37 @@
 
     <form action="https://formsubmit.co/ivanchenkokostya2012@gmail.com" method="POST">
         
-        <!-- Имя (БЕЗ ПРИМЕРА "Анна") -->
+        <!-- Имя -->
         <div class="form-group">
             <label for="name">Ваше имя</label>
             <input type="text" id="name" name="Имя" placeholder="Введите ваше имя" required>
         </div>
 
+        <!-- Объект -->
         <div class="form-group">
             <label for="object">Ваш объект</label>
             <input type="text" id="object" name="Объект" placeholder="Квартира/дом, новострой/вторичка, ЖК или район" required>
         </div>
 
+        <!-- Площадь -->
         <div class="form-group">
             <label for="area">Площадь объекта (м²)</label>
             <input type="number" id="area" name="Площадь" placeholder="Например, 65" required>
         </div>
 
+        <!-- Местоположение -->
         <div class="form-group">
             <label for="location">Местоположение объекта</label>
             <input type="text" id="location" name="Местоположение" placeholder="Населенный пункт, улица" required>
         </div>
 
+        <!-- ===== ИЗМЕНЕНО: ТЕПЕРЬ ТЕКСТОВОЕ ПОЛЕ ===== -->
         <div class="form-group">
             <label for="timing">Когда хотели бы начать ремонт?</label>
-            <select id="timing" name="Срок_начала" required>
-                <option value="">Выберите вариант...</option>
-                <option value="в ближайший месяц">В ближайший месяц</option>
-                <option value="через 2-3 месяца">Через 2-3 месяца</option>
-                <option value="через 3-6 месяцев">Через 3-6 месяцев</option>
-                <option value="через полгода и позже">Через полгода и позже</option>
-                <option value="ещё не решили">Ещё не решили</option>
-            </select>
+            <input type="text" id="timing" name="Срок_начала" placeholder="Например: июнь 2026, через 2 месяца" required>
         </div>
 
+        <!-- Телефон -->
         <div class="form-group">
             <label for="phone_input">Номер телефона</label>
             <input type="tel" id="phone_input" name="Телефон" placeholder="___-__-__" value="+7" required>
@@ -358,6 +356,7 @@
         <input type="hidden" name="_captcha" value="false">
         <input type="hidden" name="_next" value="thanks.html">
 
+        <!-- Чекбоксы -->
         <div class="checkbox-group">
             <input type="checkbox" id="privacy" name="privacy" value="Согласен" required>
             <label for="privacy">«Я принимаю условия <span class="policy-link" onclick="openModal()">Политики конфиденциальности</span>»</label>
