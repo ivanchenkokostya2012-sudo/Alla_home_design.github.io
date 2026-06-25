@@ -204,43 +204,43 @@
     <h1 class="main-title">Alla_Home_Design</h1>
     <div class="sub-title">ДИЗАЙН ИНТЕРЬЕРА И РЕМОНТ ПОД КЛЮЧ</div>
 
-    <!-- КАРТИНКА -->
     <div class="gallery">
         <img src="photo.jpg" alt="Интерьер">
     </div>
 
     <div class="city">САМАРА</div>
 
-    <!-- ФОРМА С ОТПРАВКОЙ НА ПОЧТУ -->
-    <form action="https://formsubmit.co/ivanchenkokostya2012@gmail.com" method="POST">
-        <!-- Имя -->
+    <!-- 🔽 ЗДЕСЬ МЕНЯЕТЕ ПОЧТУ 🔽 -->
+    <form action="https://formsubmit.co/новая_почта@gmail.com" method="POST">
+        
+        <!-- Имя (обязательно) -->
         <div class="form-group">
             <label for="name">Ваше имя</label>
             <input type="text" id="name" name="Имя" placeholder="Например, Анна" required>
         </div>
 
-        <!-- Объект -->
+        <!-- Объект (обязательно) -->
         <div class="form-group">
             <label for="object">Ваш объект</label>
-            <input type="text" id="object" name="Объект" placeholder="Квартира/дом, новострой/вторичка, ЖК или район">
+            <input type="text" id="object" name="Объект" placeholder="Квартира/дом, новострой/вторичка, ЖК или район" required>
         </div>
 
-        <!-- Площадь -->
+        <!-- Площадь (обязательно) -->
         <div class="form-group">
             <label for="area">Площадь объекта (м²)</label>
-            <input type="number" id="area" name="Площадь" placeholder="Например, 65">
+            <input type="number" id="area" name="Площадь" placeholder="Например, 65" required>
         </div>
 
-        <!-- Местоположение -->
+        <!-- Местоположение (обязательно) -->
         <div class="form-group">
             <label for="location">Местоположение объекта</label>
-            <input type="text" id="location" name="Местоположение" placeholder="Населенный пункт, улица">
+            <input type="text" id="location" name="Местоположение" placeholder="Населенный пункт, улица" required>
         </div>
 
-        <!-- Когда начать ремонт -->
+        <!-- Когда начать ремонт (обязательно) -->
         <div class="form-group">
             <label for="timing">Когда хотели бы начать ремонт?</label>
-            <select id="timing" name="Срок_начала">
+            <select id="timing" name="Срок_начала" required>
                 <option value="">Выберите вариант...</option>
                 <option value="в ближайший месяц">В ближайший месяц</option>
                 <option value="через 2-3 месяца">Через 2-3 месяца</option>
@@ -250,17 +250,17 @@
             </select>
         </div>
 
-        <!-- Телефон -->
+        <!-- Телефон (обязательно, с +7) -->
         <div class="form-group">
             <label for="phone_input">Номер телефона</label>
-            <input type="tel" id="phone_input" name="Телефон" placeholder="+7 900 000-00-00" required>
+            <input type="tel" id="phone_input" name="Телефон" placeholder="___-__-__" value="+7" required>
         </div>
 
         <!-- Скрытые поля для FormSubmit -->
         <input type="hidden" name="_captcha" value="false">
         <input type="hidden" name="_next" value="thanks.html">
 
-        <!-- Чекбоксы -->
+        <!-- Чекбоксы (обязательные) -->
         <div class="checkbox-group">
             <input type="checkbox" id="privacy" name="privacy" value="Согласен" required>
             <label for="privacy">«Я принимаю условия Политики конфиденциальности»</label>
